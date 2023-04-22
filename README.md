@@ -5,6 +5,7 @@ Process Module and files:
 
 
 ----EXECUTION----
+
 Main.c It contains all operations such as process creation, scheduling ,context switch,updating PCB and GUI,which is implemented using GTK. To run : /gcc ‘pkg-config gtk+-3.0 --cflags‘ main.c stack implementation.c queue implementation.c -o os ‘pkg-config gtk+-3.0 --libs‘
 
 ./os
@@ -18,7 +19,8 @@ This code can run in linux. Only main.c needs to be runned.You need to install G
 
 ---IMPLENTATION---
 
-• Four processes are added to four different text files and in which instruction for process is given. Ready queue is formed using circular queue. Now scheduling is done,for every quantum when process runs, its PC is incremented,completed time for particular running process increases by quantum, 2 instructions are executed in one quantum and value of variables are PUSH-
+
+Four processes are added to four different text files and in which instruction for process is given. Ready queue is formed using circular queue. Now scheduling is done,for every quantum when process runs, its PC is incremented,completed time for particular running process increases by quantum, 2 instructions are executed in one quantum and value of variables are PUSH-
 
 ed in stack of that process.Whenever that process again gets processor to execute, value of this registers is used. After this, next process which is in ready queue gets turn and execute instructions in similar way. This will continue until any of the process gets blocked. Whenever any process gets blocked, it is added to block queue and processor is given to next process. When needed resource for blocked process is free/available, it is again added o ready queue. As a result we are showing before and updated PCB of each process. Resources are blocked and released through GUI.
 
