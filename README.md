@@ -1,6 +1,7 @@
 # OS_LAB_PROJECT
 
-We have implemented Context Switching and RR scheduling. We need to do Context Switching whenever Process switch takes place. Here Scheduling is done, so whenever time slice of one process is completed, processor is allocated to next process,for this we need to save the state of process so that next time it should run from where it was left. We have implemented context switch for Scheduling and I/O interrupts
+I have implemented Context Switching and RR scheduling.I needed to do Context Switching whenever Process switch takes place. Here Scheduling is done, so whenever time slice of one process is completed, processor is allocated to next process,for this we need to save the state of process so that next time it should run from where it was left. I have implemented context switch for Scheduling and I/O interrupts only.
+
 Process Module and files:
 
 
